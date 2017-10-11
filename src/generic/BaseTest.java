@@ -18,7 +18,9 @@ public abstract class BaseTest implements IAutoConst{
 		driver=new ChromeDriver();
 		String url = Lib.getProperty(CONFIG_PATH,"URL");
 		driver.get(url);
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		String sITO = Lib.getProperty(CONFIG_PATH,"ITO");
+		long lITO = Long.parseLong(sITO);
+		driver.manage().timeouts().implicitlyWait(lITO,TimeUnit.SECONDS);
 	}
 	@AfterMethod
 	public void closeApplication(){
