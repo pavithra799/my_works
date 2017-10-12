@@ -13,7 +13,7 @@ public abstract class BaseTest implements IAutoConst{
     	System.setProperty(CHROME_KEY,CHROME_VALUE);
     	System.setProperty(GECKO_KEY, GECKO_VALUE);
     }
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void openApplication(){
 		driver=new ChromeDriver();
 		String url = Lib.getProperty(CONFIG_PATH,"URL");
@@ -22,7 +22,7 @@ public abstract class BaseTest implements IAutoConst{
 		long lITO = Long.parseLong(sITO);
 		driver.manage().timeouts().implicitlyWait(lITO,TimeUnit.SECONDS);
 	}
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void closeApplication(){
 		driver.quit();
 	}

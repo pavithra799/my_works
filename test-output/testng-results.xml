@@ -1,28 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Title is matching]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36284" started-at="2017-10-12T15:44:27Z" finished-at="2017-10-12T15:45:03Z">
+  <suite name="Suite" duration-ms="8133" started-at="2017-10-12T15:56:50Z" finished-at="2017-10-12T15:56:58Z">
     <groups>
-      <group name="product">
-        <method signature="VerifyProductVersion.testProductVersion()[pri:3, instance:script.VerifyProductVersion@2a5ca609]" name="testProductVersion" class="script.VerifyProductVersion"/>
-      </group> <!-- product -->
+      <group name="smoke">
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@8bd1b6a]" name="testValidLogin" class="script.ValidLogin"/>
+      </group> <!-- smoke -->
+      <group name="login">
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@8bd1b6a]" name="testValidLogin" class="script.ValidLogin"/>
+      </group> <!-- login -->
     </groups>
-    <test name="Default test" duration-ms="36284" started-at="2017-10-12T15:44:27Z" finished-at="2017-10-12T15:45:03Z">
-      <class name="script.VerifyProductVersion">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.VerifyProductVersion@2a5ca609]" name="openApplication" is-config="true" duration-ms="20119" started-at="2017-10-12T08:44:27Z" finished-at="2017-10-12T08:44:47Z">
+    <test name="TestChrome" duration-ms="8133" started-at="2017-10-12T15:56:50Z" finished-at="2017-10-12T15:56:58Z">
+      <class name="script.ValidLogin">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.ValidLogin@8bd1b6a]" name="openApplication" is-config="true" duration-ms="5699" started-at="2017-10-12T08:56:50Z" finished-at="2017-10-12T08:56:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testProductVersion()[pri:3, instance:script.VerifyProductVersion@2a5ca609]" name="testProductVersion" duration-ms="15192" started-at="2017-10-12T08:44:47Z" finished-at="2017-10-12T08:45:02Z">
+        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin@8bd1b6a]" name="testValidLogin" duration-ms="1810" started-at="2017-10-12T08:56:55Z" finished-at="2017-10-12T08:56:57Z">
           <reporter-output>
+            <line>
+              <![CDATA[Title is matching]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testProductVersion -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:script.VerifyProductVersion@2a5ca609]" name="closeApplication" is-config="true" duration-ms="930" started-at="2017-10-12T08:45:02Z" finished-at="2017-10-12T08:45:03Z">
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:script.ValidLogin@8bd1b6a]" name="closeApplication" is-config="true" duration-ms="596" started-at="2017-10-12T08:56:57Z" finished-at="2017-10-12T08:56:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- script.VerifyProductVersion -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- script.ValidLogin -->
+    </test> <!-- TestChrome -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -1,5 +1,10 @@
 <suite name="Suite">
-  <test name="Test">
+  <test name="TestChrome">
+   <groups>
+	<run>
+		<include name="smoke"/>
+	</run>
+   </groups>
    <packages>
     <package name="script"/>
    </packages>

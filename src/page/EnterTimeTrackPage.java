@@ -49,10 +49,22 @@ public class EnterTimeTrackPage {
 		
 	}
 	public void clickHelp(){
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		helpMenu.click();
 	}
 	
 	public void clickAboutActiTIME(){
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		aboutMenu.click();
 	}
 	
@@ -63,10 +75,22 @@ public class EnterTimeTrackPage {
 	}
 	
 	public void clickCloseButton(){
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		closeButton.click();
 	}
 	
 	public void clickLogout(){
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		logoutLink.click();
 	}
 	

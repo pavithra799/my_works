@@ -1,7 +1,6 @@
 package script;
 
 import org.testng.annotations.Test;
-
 import generic.BaseTest;
 import generic.Lib;
 import page.EnterTimeTrackPage;
@@ -26,12 +25,16 @@ public class VerifyProductVersion extends BaseTest{
 		e.clickHelp();
 //		Click on About ActiTIME
 		e.clickAboutActiTIME();
-//		verify Prodcut version
+//		verify Product version
 		e.verifyProductVersion(version);
 //		Click close button on the popup
 		e.clickCloseButton();
 //		click logout
 		e.clickLogout();
 	}
-
 }
+
+
+
+
+
